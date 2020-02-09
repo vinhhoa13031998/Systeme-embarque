@@ -29,73 +29,73 @@
 /*
  *                ARM Cortex Mx processor NVIC Priority register Addresse
  */
-#define NVIC_PR_BASE_ADDR									((__vo uint32_t*)0xE000E400)
+#define NVIC_PR_BASE_ADDR		 ((__vo uint32_t*)0xE000E400)
 
 
 
 /*
 	LED and Button
 */
-#define LED_GREEN   											GPIO_Pin5  // port A
-#define Button														GPIO_Pin13 // port C
+#define LED_GREEN   			 GPIO_Pin5  // port A
+#define Button				 GPIO_Pin13 // port C
 
 /*GPIO select mode*/
 
-#define GPIO_MODE_IN         							((uint32_t) 0x00)
-#define GPIO_MODE_OUT				 				 			((uint32_t) 0x01)
-#define GPIO_MODE_ALTFN									  ((uint32_t) 0x02)
-#define GPIO_MODE_ANALOG									((uint32_t) 0x03)
-#define GPIO_MODE_IT_FT										4   // falling edge trigger
-#define GPIO_MODE_IT_RT										5		// Rising edge trigger
-#define GPIO_MODE_IT_RFT									6		// falling + Rising edge trigger
+#define GPIO_MODE_IN         		 ((uint32_t) 0x00)
+#define GPIO_MODE_OUT			 ((uint32_t) 0x01)
+#define GPIO_MODE_ALTFN			 ((uint32_t) 0x02)
+#define GPIO_MODE_ANALOG		 ((uint32_t) 0x03)
+#define GPIO_MODE_IT_FT			 4   // falling edge trigger
+#define GPIO_MODE_IT_RT		         5   // Rising edge trigger
+#define GPIO_MODE_IT_RFT		 6   // falling + Rising edge trigger
 
 /*GPIO Output type selection*/
 
-#define GPIO_PIN_OP_PushPull							((uint32_t) 0x00)
-#define GPIO_PIN_OP_OPEN_DRAIN						((uint32_t) 0x01)
+#define GPIO_PIN_OP_PushPull		((uint32_t) 0x00)
+#define GPIO_PIN_OP_OPEN_DRAIN		((uint32_t) 0x01)
 
 /*GPIO ouput select speed type*/
 
-#define GPIO_PIN_LOW_SPEED								((uint32_t) 0x00)
-#define GPIO_PIN_MEDIUM_SPEED							((uint32_t) 0x01)
-#define GPIO_PIN_FAST_SPEED								((uint32_t) 0x02)
-#define GPIO_PIN_HIGH_SPEED								((uint32_t) 0x03)
+#define GPIO_PIN_LOW_SPEED		((uint32_t) 0x00)
+#define GPIO_PIN_MEDIUM_SPEED		((uint32_t) 0x01)
+#define GPIO_PIN_FAST_SPEED		((uint32_t) 0x02)
+#define GPIO_PIN_HIGH_SPEED		((uint32_t) 0x03)
 
 /*GPIO port select PULL-UP and PULL-DOWN type*/
 
-#define GPIO_PIN_NO_PULL									((uint32_t) 0x00)
-#define GPIO_PIN_PULL_UP									((uint32_t) 0x01)
-#define GPIO_PIN_PULL_DOWN								((uint32_t) 0x02)
-#define GPIO_PIN_RESERVED									((uint32_t) 0x03)
+#define GPIO_PIN_NO_PULL		((uint32_t) 0x00)
+#define GPIO_PIN_PULL_UP		((uint32_t) 0x01)
+#define GPIO_PIN_PULL_DOWN		((uint32_t) 0x02)
+#define GPIO_PIN_RESERVED		((uint32_t) 0x03)
 
 /*GPIO Pin number */
 
-#define GPIO_Pin0													0
-#define GPIO_Pin1													1
-#define GPIO_Pin2													2
-#define GPIO_Pin3													3
-#define GPIO_Pin4													4
-#define GPIO_Pin5													5
-#define GPIO_Pin6													6
-#define GPIO_Pin7													7
-#define GPIO_Pin8													8
-#define GPIO_Pin9													9
-#define GPIO_Pin10											  10
-#define GPIO_Pin11												11
-#define GPIO_Pin12												12
-#define GPIO_Pin13												13
-#define GPIO_Pin14												14
-#define GPIO_Pin15												15
+#define GPIO_Pin0			0
+#define GPIO_Pin1		 	1
+#define GPIO_Pin2			2
+#define GPIO_Pin3			3
+#define GPIO_Pin4			4
+#define GPIO_Pin5			5
+#define GPIO_Pin6			6
+#define GPIO_Pin7			7
+#define GPIO_Pin8			8
+#define GPIO_Pin9			9
+#define GPIO_Pin10			10
+#define GPIO_Pin11			11
+#define GPIO_Pin12			12
+#define GPIO_Pin13			13
+#define GPIO_Pin14			14
+#define GPIO_Pin15			15
 
 
 
 //// Some general marcro
 #define ENABLE 					1
 #define DISABLE 				0
-#define SET 						ENABLE
+#define SET 					ENABLE
 #define RESET 					DISABLE
-#define GPIO_Pin_Set		SET
-#define GPIO_Pin_Reset	Reset	
+#define GPIO_Pin_Set				SET
+#define GPIO_Pin_Reset				Reset	
 /*
 
 		ENABLE Clock for GPIO peripherals
